@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CardStack4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -75,15 +76,29 @@
                 app:srcCompat="@drawable/player1" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/P1Score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
-                android:text="Score: 3"
+                android:text="Score: 73"
                 android:textAlignment="center"
                 android:textColor="#FBFAFA"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/P1Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:fontFamily="monospace"
+                android:text="You"
+                android:textAlignment="center"
+                android:textColor="#03A9F4"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:translationY="-80dp" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -106,15 +121,27 @@
                 app:srcCompat="@drawable/player2" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/P2Score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
-                android:text="Score: 4"
+                android:text="Score: 0"
                 android:textAlignment="center"
                 android:textColor="#FDFDFD"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/P2Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Player 2"
+                android:textAlignment="center"
+                android:textColor="#BFA9E6"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:translationY="-80dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -137,15 +164,27 @@
                 app:srcCompat="@drawable/player3" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/P3Score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
-                android:text="Score: 1"
+                android:text="Score: 60"
                 android:textAlignment="center"
                 android:textColor="#FBFDFB"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/P3Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Player 3"
+                android:textAlignment="center"
+                android:textColor="#A0DAA3"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:translationY="-80dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -168,15 +207,27 @@
                 app:srcCompat="@drawable/player4" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/P4Score"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
-                android:text="Score: 2"
+                android:text="Score: 50"
                 android:textAlignment="center"
-                android:textColor="#4CAF50"
+                android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/P4_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="Player 4"
+                android:textAlignment="center"
+                android:textColor="#E8957B"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:translationY="-80dp" />
         </LinearLayout>
 
     </LinearLayout>
@@ -398,5 +449,129 @@
         </FrameLayout>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/CardStack"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:rotation="86"
+        android:rotationX="56"
+        android:translationX="320dp"
+        android:translationY="480dp"
+        app:srcCompat="@drawable/back_of_card"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <ImageView
+        android:id="@+id/CardStack2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:rotation="90"
+        android:rotationX="56"
+        android:translationX="320dp"
+        android:translationY="470dp"
+        app:srcCompat="@drawable/back_of_card"
+        tools:layout_editor_absoluteX="320dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <ImageView
+        android:id="@+id/CardStack3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:rotation="90"
+        android:rotationX="56"
+        android:translationX="320dp"
+        android:translationY="460dp"
+        app:srcCompat="@drawable/back_of_card"
+        tools:layout_editor_absoluteX="320dp"
+        tools:layout_editor_absoluteY="460dp" />
+
+    <ImageView
+        android:id="@+id/CardStackpt4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:rotation="90"
+        android:rotationX="56"
+        android:translationX="320dp"
+        android:translationY="450dp"
+        app:srcCompat="@drawable/back_of_card"
+        tools:layout_editor_absoluteX="320dp" />
+
+    <ImageView
+        android:id="@+id/FaceCard"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:translationX="300dp"
+        android:translationY="690dp"
+        app:srcCompat="@drawable/hearts7"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="690dp" />
+
+    <Button
+        android:id="@+id/DrawCardButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Draw Card"
+        android:translationX="50dp"
+        android:translationY="1000dp"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="700dp" />
+
+    <ImageView
+        android:id="@+id/purplearrow"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_weight="0"
+        android:rotation="176"
+        android:rotationX="-2"
+        android:rotationY="180"
+        android:scrollbarSize="1dp"
+        android:translationX="600dp"
+        android:translationY="770dp"
+        app:srcCompat="@drawable/purplearrow"
+        tools:layout_editor_absoluteX="-18dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <ImageView
+        android:id="@+id/greenarrow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:rotation="-13"
+        android:rotationX="-180"
+        android:translationX="580dp"
+        android:translationY="360dp"
+        app:srcCompat="@drawable/greenarrow"
+        tools:layout_editor_absoluteX="660dp"
+        tools:layout_editor_absoluteY="200dp" />
+
+    <ImageView
+        android:id="@+id/bluearrow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:rotation="90"
+        android:rotationY="4"
+        android:translationX="80dp"
+        android:translationY="770dp"
+        app:srcCompat="@drawable/bluearrow"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="770dp" />
+
+    <ImageView
+        android:id="@+id/orangearrow"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:rotation="-13"
+        android:rotationY="-176"
+        android:translationX="80dp"
+        android:translationY="360dp"
+        app:srcCompat="@drawable/orangearrow"
+        tools:layout_editor_absoluteX="80dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
